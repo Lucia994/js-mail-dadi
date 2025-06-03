@@ -17,3 +17,15 @@ const listPartyGuests = [
     "adam_sandler@gmail.com",
 
 ]
+// Step 2- Richiesta dell'email dell'utente
+ const userEmail = prompt(("Inserisci la tua email"));
+
+// Step 3 - Controlla che sia nella lista di chi può accedere
+let isUserAuthorized  = false;
+
+for (let i = 0; i < listPartyGuests.length; i++) {
+    if (userEmail === listPartyGuests[i]) {  // Se  l'email è nella lista allora si può passare allo step successivo
+        isUserAuthorized  = true;
+        break;  // fermiamo il ciclo perché l'email è stata trovata
+    }
+}
