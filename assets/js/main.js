@@ -29,3 +29,9 @@ for (let i = 0; i < listPartyGuests.length; i++) {
         break;  // fermiamo il ciclo perché l'email è stata trovata
     }
 }
+// Step 4 - Stampa un messaggio appropriato sull’esito del controllo,
+if (isUserAuthorized) {
+    console.log("Benvenuto alla festa!");
+} else {
+    console.log("Spiacente, non sei nella lista degli invitati.");
+}
